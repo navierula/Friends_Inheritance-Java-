@@ -3,67 +3,67 @@ Friends_Inheritance-Java-
 
 Practicing object-oriented programming in Java
 
-public class Friends {
-  //The title of the TV show, Friends, is the superclass.
+   public class Friends {
+   //The title of the TV show, Friends, is the superclass.
   
-  String Birthday;
+   String Birthday;
   
-  public void displayBirthday() {
+   public void displayBirthday() {
     System.out.print("The actor playing the part was born on " + Birthday);
     
-  }
+   }
   
-  String Location;
+   String Location;
   
-  public void displayLocation() {
+   public void displayLocation() {
     System.out.println(" in " + Location);
-  }
-}
+   }
+   }
 
 -----------------------------------------------
 
-public class Actors extends Friends {
-  //Actors is a subclass under the superclass, Friends.
+   public class Actors extends Friends {
+   //Actors is a subclass under the superclass, Friends.
   
-  String JenniferAniston = "Jennifer Aniston";
-  String CourteneyCox = "Courteney Cox";
-  String LisaKudrow = "Lisa Kudrow";
-  String MattLeBlanc = "Matt LeBlanc";
-  String MatthewPerry = "Matthew Perry";
-  String DavidSchwimmer = "David Schwimmer";
+   String JenniferAniston = "Jennifer Aniston";
+   String CourteneyCox = "Courteney Cox";
+   String LisaKudrow = "Lisa Kudrow";
+   String MattLeBlanc = "Matt LeBlanc";
+   String MatthewPerry = "Matthew Perry";
+   String DavidSchwimmer = "David Schwimmer";
   
-  void givemeJenniferAniston() {
+   void givemeJenniferAniston() {
     System.out.println(JenniferAniston + " portrayed Rachel Green on Friends.");
-  }
+   }
   
-  void givemeCourteneyCox() {
+   void givemeCourteneyCox() {
     System.out.println(CourteneyCox + " portrayed Monica Geller on Friends.");
-  }
+   }
   
-  void givemeLisaKudrow() {
+   void givemeLisaKudrow() {
     System.out.println(LisaKudrow + " portrayed Phoebe Buffay on Friends.");
-  }
+   }
   
-  void givemeMattLeBlanc() {
+   void givemeMattLeBlanc() {
     System.out.println(MattLeBlanc + " portrayed Joey Tribbiani on Friends.");
-  }
+   }
   
-  void givemeMatthewPerry() {
+   void givemeMatthewPerry() {
     System.out.println(MatthewPerry + " portrayed Chandler Bing on Friends.");
-  }
+   }
   
-  void givemeDavidSchwimmer() {
+   void givemeDavidSchwimmer() {
     System.out.println(DavidSchwimmer + " portrayed Ross Geller on Friends.");
-  }
+   }
                                          
-}
+   }
 
 -------------------------------------------
 
-public class InheritanceProgram {
-  // OOP (object-oriented programming) program, showcasing inheritance
+   public class InheritanceProgram {
+   // OOP (object-oriented programming) program, showcasing inheritance
   
-  public static void main (String[] args) {
+   public static void main (String[] args) {
     Actors RachelGreen = new Actors();
     Actors MonicaGeller = new Actors();
     Actors PhoebeBuffay = new Actors();
@@ -106,5 +106,5 @@ public class InheritanceProgram {
     RossGeller.Location = "Flusing, Queens (borough), NY.";
     RossGeller.displayBirthday();
     RossGeller.displayLocation();
-  }
-}
+   }
+   }
